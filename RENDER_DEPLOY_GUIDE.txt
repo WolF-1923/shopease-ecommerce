@@ -1,0 +1,17 @@
+SHOPEASE - RENDER DEPLOYMENT GUIDE (HINGLISH)
+
+1. Extract this ZIP on your computer.
+2. GitHub par sign in/create account: https://github.com/
+3. GitHub par New repository banayein, naam shopease-ecommerce rakhein.
+4. Is folder ke andar ki files repository mein upload karein: app.py, requirements.txt, Procfile, templates/, static/ and other project files. Parent folder ko as-is upload na karein; app.py repository root par hona chahiye.
+5. Render par sign in karein: https://render.com/
+6. Dashboard > New + > Web Service. GitHub repository connect/select karein.
+7. Build Command: pip install -r requirements.txt; Start Command: gunicorn app:app.
+8. Available plan choose karein, then Create Web Service.
+9. Deployment successful hone par Render public https://...onrender.com URL dega. Wahi URL faculty ko bhejein.
+
+IMPORTANT:
+- Public URL sirf deployment complete hone ke baad banta hai; chat se bina account/repository access ke URL create nahi ho sakta.
+- Free Render web services inactivity ke baad sleep ho sakti hain; first visit ko start hone mein thoda waqt lag sakta hai.
+- SQLite file on free hosting may not persist across restarts/redeploys. Avoid real customer information.
+- This is an academic demo; it does not process real payments.
